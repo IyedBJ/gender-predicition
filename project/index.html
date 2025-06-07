@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gender Prediction</title>
+  </head>
+  <body>
+    <h1>Gender Prediction using Machine Learning</h1>
+    <p>Enter height (cm), weight (kg), and shoe size (EU) to predict gender.</p>
+
+    <div class="input">
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" name="height" required />
+    </div>
+
+    <div class="input">
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" name="weight" required />
+    </div>
+
+    <div class="input">
+      <label for="shoeSize">Shoe Size (EU):</label>
+      <input type="number" id="shoeSize" name="shoeSize" required />
+    </div>
+
+    <button onclick="predict()">Predict Gender</button>
+    <div id="result"></div>
+
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
